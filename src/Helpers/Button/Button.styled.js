@@ -3,7 +3,7 @@ import { dim } from 'Styles/theme';
 
 const getButtonColor = (props) => {
   if (props.primaryBtn) {
-    if (props.disabled) return props.theme.color.button_disabled;
+    if (props.disabled) return props.theme.color.base_100;
     return props.buttonColor || props.theme.color.blue_50;
   }
   if (props.disabled) return props.theme.color.white;
@@ -24,16 +24,18 @@ const StyledButton = styled.button`
   display: flex;
   height: ${props => (props.height ? dim._scale(props.height) : 'auto')};
   width: ${props => (props.width || '100%')};
-  font-size:${props => (props.fontSize || dim._14px)};
   align-items: center;
   justify-content: center;
-  padding: ${props => props.imageUrl ? `${dim._4px} ${dim._16px} ${dim._4px} ${dim._12px}` : `${dim._8px} ${dim._16px}`};
+  padding: ${dim._4px} ${dim._16px} ${dim._4px} ${dim._12px};
   color: ${props => getColor(props)};
   background-color: ${props => getButtonColor(props)};
   border: ${(props) => {
-    return props.secondaryBtn ? `1px solid ${(props.fontColor || props.theme.color.blue_50, '.1')}` : '0px';
+    return props.secondaryBtn ?
+    `1px solid ${(props.fontColor || props.theme.color.blue_50, '.1')}`
+    :
+    `1px solid ${props => props.theme.color.base_30}`;
   }};
-  border-radius: ${props => (props.borderRadius || dim._4px)};
+  border-radius: ${props => (props.borderRadius || '4px')};
   cursor: ${props => !props.disabled ? 'pointer' : 'default'};
 
   box-shadow: ${props => !props.disabled ? '0 1px 2px 0 rgba(9, 30, 66, 0.15), 0 0 1px 0 rgba(9, 30, 66, 0.25)' : ''};

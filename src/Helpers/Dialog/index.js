@@ -45,11 +45,11 @@ const Dialog = (props) => {
         {
           props.textSecondaryButton ?
             <Button
-              className='button14'
+              disabled={props.disableSecondaryButton}
               style={{ marginLeft: '8px' }}
               buttonColor={props.bgSecondaryButton ? props.bgSecondaryButton : '#4bb530'}
-              fontColor={props.colorSecondaryButton ? props.colorSecondaryButton : '#000'}
-              hoverColor={props.hoverSecondaryButton ? props.hoverSecondaryButton : '#a2e890'}
+              fontColor={props.colorSecondaryButton ? props.colorSecondaryButton : '#fff'}
+              hoverColor={props.hoverSecondaryButton ? props.hoverSecondaryButton : '#4bb530'}
               activeColor={props.activeSecondaryButton ? props.activeSecondaryButton : '#42d61d'}
               hoverBoxShadow={props.hoverShadow ? props.hoverShadow : '0 1px 2px 0 rgba(9, 30, 66, 0.15), 0 0 1px 0 rgba(9, 30, 66, 0.25), 0 4px 8px 0 rgba(223, 46, 46, 0.25)'}
               activeBoxShadow='0 1px 2px 0 rgba(9, 30, 66, 0.15), 0 0 1px 0 rgba(9, 30, 66, 0.25)'
@@ -60,7 +60,6 @@ const Dialog = (props) => {
             : ''
         }
         <Button
-          className='button14'
           defaultBorder={props.defaultBorder || !props.bgPrimaryButton}
           buttonColor={props.bgPrimaryButton ? props.bgPrimaryButton : '#ffffff'}
           fontColor={props.colorPrimaryButton ? props.colorPrimaryButton : '#54555d'}

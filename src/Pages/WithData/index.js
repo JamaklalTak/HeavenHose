@@ -58,14 +58,14 @@ const WithData = React.memo((props) => {
                   src={item.urls.full}
                   alt={item.alt_description}
                 >
-                  <div className='imageName' style={{color: item.color}}>{item.alt_description}</div>
-                  <div className='userName'>
+                  <div className='imageName textBold14' style={{color: item.color}}>{item.alt_description}</div>
+                  <div className='userName textBold14'>
                       <Avatar image={item.user.profile_image.medium} size='M' bgColor={item.color}/>
                       <span style={{color: item.color}}>{item.user.username}</span>
                   </div>
                 </Image>
                 {item.description && <figcaption>
-                  <div className='imageDescription'>{item.description}</div>
+                  <div className='imageDescription text12'>{item.description}</div>
                 </figcaption>}
               </figure>
             );

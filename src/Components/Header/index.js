@@ -59,7 +59,7 @@ const Header = (props) => {
             <title id="unsplash-home">Haven Home</title>
             <path d="M10 9V0h12v9H10zm12 5h10v18H0V14h10v9h12v-9z"></path>
           </svg>
-          <span className='titleName'>HAVEN HOUSE</span>
+          <span className='titleName headerBold24'>HAVEN HOUSE</span>
         </div>
         <Input className='searchTopic' value={searchValue} _onChange={e => _handleSearch(e.target.value)} />
       </div>

@@ -8,7 +8,7 @@ const Input = (props) => {
   return(
     <InputStyle>
       <input
-        className={className}
+        className={`text14 ${className}`}
         type='text'
         value={value}
         placeholder='Enter text here!'

@@ -11,7 +11,7 @@ const Tabs = (props) => {
           return(
             <li
               key={tab.id}
-              className={activeTabId === tab.id ? 'active' : ''}
+              className={`text14 ${activeTabId === tab.id ? 'active' : ''}`}
               onClick={() =>_onTabClick(tab.id)}
             >
               {tab.name}

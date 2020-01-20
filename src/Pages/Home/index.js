@@ -49,9 +49,7 @@ const Home = React.memo((props) => {
     setUserDataToRender(data);
     setImageName(data.alt_description);
     setImageDesc(data.description);
-    if(data.description  || data.alt_description){
-      setShowDialogBox(true);
-    }
+    setShowDialogBox(true);
   };
 
   const _handleSaveButton = (data) => {
@@ -87,13 +85,14 @@ const Home = React.memo((props) => {
           _handleDialogCrossClick={() => setShowDialogBox(false)}
           textPrimaryButton="Cancel"
           textSecondaryButton="Save"
+          disableSecondaryButton={!(imageName || imageDesc)}
           onPrimaryButtonClick={() => setShowDialogBox(false)}
           onSecondaryButtonClick={() => _handleSaveButton(userDataToRender)}
         >
           <div className='dialogBodyContainer'>
             <div className='dialogUserName'>
-              <Avatar image={userDataToRender.user.profile_image.medium} size='M' bgColor={userDataToRender.color} />
-              <span style={{color: userDataToRender.color}}>{userDataToRender.user.username}</span>
+              <Avatar image={userDataToRender.user.profile_image.medium} size='M' bgColor={'#e0891a'} />
+              <span style={{color: '#0c0c0c'}} className='text16'>{userDataToRender.user.username}</span>
             </div>
             <div className='dialogImageURL'>
               <Image src={userDataToRender.urls.full} />
@@ -106,7 +105,9 @@ const Home = React.memo((props) => {
                   _onBlur={() => setShowEditName(false)}
                 />
                 :
-                <div className='dialogImageName' onClick={() => setShowEditName(true)}>{imageName}</div>
+                <div className='dialogImageName textBold14' onClick={() => setShowEditName(true)}>
+                  {imageName ? imageName : 'Add Name'}
+                </div>
               }
               {showEditDesc ?
                 <Input
@@ -115,7 +116,9 @@ const Home = React.memo((props) => {
                   _onBlur={() => setShowEditDesc(false)}
                 />
                 :
-                <div className='dialogImageDesc' onClick={() => setShowEditDesc(true)}>{imageDesc}</div>
+                <div className='dialogImageDesc text14' onClick={() => setShowEditDesc(true)}>
+                  {imageDesc ? imageDesc : 'Add Description'}
+                </div>
               }
             </div>
           </div>
