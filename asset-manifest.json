@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.js": "/HeavenHose/static/js/main.c4590d76.chunk.js",
-    "main.js.map": "/HeavenHose/static/js/main.c4590d76.chunk.js.map",
-    "runtime-main.js": "/HeavenHose/static/js/runtime-main.20974f0c.js",
-    "runtime-main.js.map": "/HeavenHose/static/js/runtime-main.20974f0c.js.map",
-    "static/js/2.1c845bc3.chunk.js": "/HeavenHose/static/js/2.1c845bc3.chunk.js",
-    "static/js/2.1c845bc3.chunk.js.map": "/HeavenHose/static/js/2.1c845bc3.chunk.js.map",
-    "static/js/3.61e9638f.chunk.js": "/HeavenHose/static/js/3.61e9638f.chunk.js",
-    "static/js/3.61e9638f.chunk.js.map": "/HeavenHose/static/js/3.61e9638f.chunk.js.map",
-    "static/js/4.24afd13e.chunk.js": "/HeavenHose/static/js/4.24afd13e.chunk.js",
-    "static/js/4.24afd13e.chunk.js.map": "/HeavenHose/static/js/4.24afd13e.chunk.js.map",
+    "main.js": "/HeavenHose/static/js/main.61515a74.chunk.js",
+    "main.js.map": "/HeavenHose/static/js/main.61515a74.chunk.js.map",
+    "runtime-main.js": "/HeavenHose/static/js/runtime-main.75c4a597.js",
+    "runtime-main.js.map": "/HeavenHose/static/js/runtime-main.75c4a597.js.map",
+    "static/js/2.fd43002e.chunk.js": "/HeavenHose/static/js/2.fd43002e.chunk.js",
+    "static/js/2.fd43002e.chunk.js.map": "/HeavenHose/static/js/2.fd43002e.chunk.js.map",
+    "static/js/3.2c259983.chunk.js": "/HeavenHose/static/js/3.2c259983.chunk.js",
+    "static/js/3.2c259983.chunk.js.map": "/HeavenHose/static/js/3.2c259983.chunk.js.map",
+    "static/js/4.a8b9c19d.chunk.js": "/HeavenHose/static/js/4.a8b9c19d.chunk.js",
+    "static/js/4.a8b9c19d.chunk.js.map": "/HeavenHose/static/js/4.a8b9c19d.chunk.js.map",
     "index.html": "/HeavenHose/index.html",
-    "precache-manifest.3b76cdbc2233b6ed29a23a898f25021f.js": "/HeavenHose/precache-manifest.3b76cdbc2233b6ed29a23a898f25021f.js",
+    "precache-manifest.a4c6e774137613165883e1e6140444e4.js": "/HeavenHose/precache-manifest.a4c6e774137613165883e1e6140444e4.js",
     "service-worker.js": "/HeavenHose/service-worker.js",
-    "static/js/2.1c845bc3.chunk.js.LICENSE": "/HeavenHose/static/js/2.1c845bc3.chunk.js.LICENSE"
+    "static/js/2.fd43002e.chunk.js.LICENSE": "/HeavenHose/static/js/2.fd43002e.chunk.js.LICENSE",
+    "static/media/loader.gif": "/HeavenHose/static/media/loader.1d7626e6.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.20974f0c.js",
-    "static/js/2.1c845bc3.chunk.js",
-    "static/js/main.c4590d76.chunk.js"
+    "static/js/runtime-main.75c4a597.js",
+    "static/js/2.fd43002e.chunk.js",
+    "static/js/main.61515a74.chunk.js"
   ]
 }
