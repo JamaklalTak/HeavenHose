@@ -43,12 +43,12 @@ const Header = (props) => {
 
   const _handleTabClick = (id) => {
     setActiveTab(id);
-    let path = '';
+    let path = '/';
     if(id === 'animal'){
       path = '/animal'
     }
     window.localStorage.setItem('currentPath', path);
-    props.history.push(`/HeavenHose/${path}`);
+    props.history.push(path);
   };
 
   return(

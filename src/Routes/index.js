@@ -20,11 +20,11 @@ const Routes = (props) => {
           }
         >
           <Switch>
-            <Route path='/HeavenHose/animal' component={WithData} />
+            <Route path='/animal' component={WithData} />
 
-            <Route path='/HeavenHose/' component={Home} />
-            <Route path='/HeavenHose/home' component={Home} />
-            <Route path='/HeavenHose/*' component={Home} />
+            <Route path='/' component={Home} />
+            <Route path='/home' component={Home} />
+            <Route path='/*' component={Home} />
           </Switch>
         </Suspense>
     );
