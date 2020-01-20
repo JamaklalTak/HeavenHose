@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "64ad9505e63e325f1d35c75bd1c4a0b6",
+    "revision": "5ba611003fa80be074338a7cbd9b5b7b",
     "url": "/HeavenHose/index.html"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/HeavenHose/static/js/4.a8b9c19d.chunk.js"
   },
   {
-    "revision": "1752b8b5eaf163ae8707",
-    "url": "/HeavenHose/static/js/main.9c07188f.chunk.js"
+    "revision": "879c494fc604d8c827eb",
+    "url": "/HeavenHose/static/js/main.c70b570b.chunk.js"
   },
   {
     "revision": "750d0b38d9113481d4ee",
