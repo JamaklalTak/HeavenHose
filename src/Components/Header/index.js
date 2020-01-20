@@ -48,7 +48,7 @@ const Header = (props) => {
       path = '/animal'
     }
     window.localStorage.setItem('currentPath', path);
-    props.history.push(path);
+    props.history.push(`/HeavenHose${path}`);
   };
 
   return(
